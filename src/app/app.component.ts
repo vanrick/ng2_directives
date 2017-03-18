@@ -8,5 +8,10 @@ import { HighlightDirective } from './highlight.directive';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  private value = 100;
+  private items = ['A','B','C','D','E']
+  private switch = true;
+  onSwitch(){
+    this.switch = !this.switch;
+  }
 }
