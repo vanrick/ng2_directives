@@ -10,7 +10,7 @@
 <div *ngIf="switch">Conditional Text</div>
 <button (click)="onSwitch()" name="button">Switch</button>
 <hr>
-<h2> *ngFor </h2>
+<h2>*ngFor</h2>
 <ul>
   <li *ngFor="let item of items">{{item}}</li>
 </ul>
@@ -24,4 +24,9 @@
   <p *ngSwitchCase="10">10</p>
   <p *ngSwitchCase="100">100</p>
   <p *ngSwitchDefault>Default</p>
+</div>
+<hr>
+<h2>UnlessDirective</h2>
+<div *dirUnless = "switch">
+  conditional text
 </div>
